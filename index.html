@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .button {
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 6px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    
+    .button1 {background-color: #000000;} /* Green */
+    .button2 {background-color: #000000;} /* Blue */
+    </style>
+
+
+<body>
+    <h1>Viktige nettsider om coding</h1>
+    <p id="demo">A Paragraph.</p>
+    <p><b>W3schools.com Verktøy</b></p>
+    <p><a href="https://www.w3schools.com/"><b>Home page<b></p>
+    <p><a href="https://www.w3schools.com/tags/ref_byfunc.asp">Basic Html</p>
+    <p><a href="https://www.w3schools.com/css/css3_flexbox.asp">CSS Flexbox</a></p>
+    <p><a href="https://www.w3schools.com/cssref/index.php">CSS Reference</a></p>
+              <button type="button1" onclick="myFunction()">Back</button>
+              <button type="button2" onclick="myFunction2()">Next</button>
+              <script>
+                function myFunction() {
+                  document.getElementById("demo").innerHTML = "Paragraph changed.";
+                }
+
+</body>
+</html>
