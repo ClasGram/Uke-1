@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
     
       <style>
-        .button {
+        .button2 {
         border: none;
-        color: white;
+        color: rgb(255, 0, 0);
         padding: 15px 32px;
         text-align: center;
         text-decoration: none;
@@ -31,43 +31,50 @@
         font-size: 6px;
         margin: 4px 2px;
         cursor: pointer;
+      }
 
-}
-      .a{
+    .a{
         text-decoration: none;
         color:red;
-     }
+      }
+    
+    .b{
+        text-decoration: none;
+        color:rgb(6, 150, 1);
+      } 
+
+
     .c{
-      text-decoration: none;
-        color:rgb(3, 221, 58);
-
-    }
-
-.b {
-  text-decoration: none;
+        text-decoration-style:none);
         color:blue;
-}
+      }
 
       </style>
   </head>
 
 <body>
     <h1>Viktige nettsider om coding</h1>
-    <p id="demo"></p>
-    <p><b>W3schools.com Verktøy</b></p>
+    <p id="ParaGraph">This is an initial paragraph</p>
+    <p><b>W3schools.com</b></p>
     <p><a class="a" href="https://www.w3schools.com/"><b>Home page<b></a></p>
-    <p><a class="a" href="https://www.w3schools.com/tags/ref_byfunc.asp">Basic Html</a></p>
+    <p><a class="b" href="https://www.w3schools.com/tags/ref_byfunc.asp">Basic Html</a></p>
     <p><a class="c" href="https://www.w3schools.com/css/css3_flexbox.asp">CSS Flexbox</a></p>
     <p><a href="https://www.w3schools.com/cssref/index.php">CSS Reference</a></p>
               
-    <button class="button" ><a href="https://www.w3schools.com/">Back</a></button>
+                  
+    <button class="button2" ><a href="https://www.youtube.com/watch?v=BBJa32lCaaY&ab_channel=LegacyPNDA">Back</a></button>
               
-     <button class="button2" ><a href="https://www.youtube.com/watch?v=BBJa32lCaaY&ab_channel=LegacyPNDA">Next</a></button>
-              
-            <script>
-                function myFunction() {
-                  document.getElementById("demo").innerHTML = `<a href="https://www.w3schools.com/">trykk her</a>` ;
-                }
-              </script>
-</body>
+    
+ 
+     <button class="button2"
+     onclick="ToggleText()">Next</button>
+ 
+     <script>
+         function ToggleText(){
+         document.getElementById("ParaGraph").innerHTML = "asdaswdagsaedgsegdasrfg<sdegsaedgasegAEgAEgAGasdaswdagsaedgsegdasrfg<sdegsaedgasegAEgAEgAGasdaswdagsaedgsegdasrfg<sdegsaedgasegAEgAEgAGasdaswdagsaedgsegdasrfg<sdegsaedgasegAEgAEgAGasdaswdagsaedgsegdasrfg<sdegsaedgasegAEgAEgAGasdaswdagsaedgsegdasrfg<sdegsaedgasegAEgAEgAG";
+         }
+ 
+     </script>
+ 
+    </body>
 </html>
