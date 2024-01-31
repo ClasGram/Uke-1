@@ -1,5 +1,9 @@
 body{
-    background-image: url(get.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
+  
+  background-image: url(get.jpg);
+  background-repeat: no-repeat;
+  background-size:fill;
 }
+  
+  
+  

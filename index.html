@@ -4,33 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Globe</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">  
     
       <style>
+         
+        
+        h1 {
+          text-shadow: 1px 1px #FF0000;
+
+        }
+ 
         .button1 {
+
         border: none;
         color: rgb(17, 0, 255);
         padding: 15px 32px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 6px;
+        font-size: 12px;
         margin: 4px 2px;
         cursor: pointer;
+        text-shadow: 1px 1px #FF0000;
+        background-color: lime;
+        
+        
 
         }
 
         .button2 {
-        border: none;
-        color: rgb(248, 0, 0);
-        background-color: rgb(255, 255, 255);
+          border: none;
+        color: rgb(17, 0, 255);
         padding: 15px 32px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 6px;
+        font-size: 12px;
         margin: 4px 2px;
         cursor: pointer;
+        text-shadow: 1px 1px #FF0000;
+        background-color: #ff6600;
+        
+        
       }
 
     .a{
@@ -52,19 +67,19 @@
 
 
       body {
-  background-color: #EEE;
-}
+        background-color: #000000;
+        scale: 100%;
+      
+      }
 
 .section {
-  background-color: #FFF;
-  padding: 20px;
-  width: 550px;
-  border-radius: 5px;
-  margin: 0 auto;
-  margin-top: 30px;
-
-  display: grid;
-  justify-content: center;
+  position: fixed;
+  top: -175px;
+  left: 400px;
+  scale: 30%;
+  border-color: #000000;
+  border-style:inset
+  
 }
 
 #analogClock {
@@ -117,7 +132,9 @@
       </style>
   </head>
 
-<body>
+<body>  
+  <link rel="stylesheet" href="style.css">
+   
     <h1>The Lost Ones</h1>
     <p id="P1" >Viktige nettsider om coding</p>
     <p id="P2" ></p>
@@ -128,9 +145,9 @@
     <p id="P7" ><a href="https://www.w3schools.com/cssref/index.php">CSS Reference</a></p>
               
                   
-    <button class="button1" onclick="goBack()">Back</button>
+    <button class="button2" onclick="goBack()">Back</button>
     <button class="button1" onclick="goToNext()">Next</button>   
- 
+  
     <script>
 
 var OriginalContent = {
@@ -144,13 +161,13 @@ var OriginalContent = {
          };
 
       function goToNext(){
-      document.getElementById("P1").innerHTML = "NewText!";
-      document.getElementById("P2").innerHTML = "NewText!";
-      document.getElementById("P3").innerHTML = "NewText!";
-      document.getElementById("P4").innerHTML = "NewText!";
-      document.getElementById("P5").innerHTML = "NewText!";
-      document.getElementById("P6").innerHTML = "NewText!";
-      document.getElementById("P7").innerHTML = "NewText!";
+      document.getElementById("P1").innerHTML = "<a href=https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran/><b>Home page<b>";
+      document.getElementById("P2").innerHTML = "<a href=https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran/><b>Home page<b>";
+      document.getElementById("P3").innerHTML = "<a href=https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran/><b>Home page<b>";
+      document.getElementById("P4").innerHTML = "<a href=https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran/><b>Home page<b>";
+      document.getElementById("P5").innerHTML = "<a href=https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran/><b>Home page<b>";
+      document.getElementById("P6").innerHTML = "<a href=https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran/><b>Home page<b>";
+      document.getElementById("P7").innerHTML = "<a href=https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran/><b>Home page<b>";
       }
       
           function goBack() {
@@ -255,5 +272,6 @@ var OriginalContent = {
 }
 timer();
  </script>
+ 
     </body>
 </html>
