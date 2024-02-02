@@ -73,6 +73,27 @@
         scale: 150%;      
         }
 
+        .button3 {
+        border:#000000;
+        border-width: 8px;
+        border-radius: 8px;
+        border-style:outset;color: #000000;
+        color: rgb(255, 255, 255);
+        padding: 13px 63px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        text-shadow: 1px 1px #000000;
+        background-color: #9300a7;
+        position: fixed;
+        top: 900px;
+        left: 60px;
+        scale: 150%;      
+        }
+
   .a{
         text-decoration: none;
         color:rgb(255, 0, 0);
@@ -182,8 +203,8 @@
                   
     <button class="button2" onclick="goBack()">Back</button>
     <button class="button1" onclick="goToNext()">Next</button>   
-  
-    <script>
+    <button class="button3" onclick="notes()">Notes</button>
+<script>
 
 var OriginalContent = {
         "P0": "Huske liste over sider til coding",
@@ -232,6 +253,20 @@ var OriginalContent = {
         document.getElementbyId("ParaGraph2").innerHTML = "newnewnewenwe!";
       }
       </script>
+
+
+
+
+<script>
+  function notes(){
+    document.getElementById("section").innerHTML = "analogClock";
+  }
+</script>
+</div>
+
+
+
+
 
 <div class="section">
 
