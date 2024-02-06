@@ -18,9 +18,25 @@
 
 
         h2 {
-          text-shadow: 1px 1px #107502;
-          font-size: 250%;
-
+          position:fixed;
+          left:600px;
+          top:-50px;
+          text-shadow: 3px 2px #a00000;
+          font-size: 200%;
+          border-style:solid;
+          border-width: 5px;
+          min-height: 150px;
+          min-width: 500px;
+          color: #d0ff00;
+          background-color: #00000070;
+          text-align: center;
+          
+          
+          
+          
+          
+          
+          
         }
  
 
@@ -47,7 +63,7 @@
         text-shadow: 1px 1px #FF0000;
         background-color: lime;
         position: fixed;
-        top: 800px;
+        top: 400px;
         left: 200px;
         scale: 150%;
       }
@@ -68,7 +84,7 @@
         text-shadow: 1px 1px #FF0000;
         background-color: #ff6600;
         position: fixed;
-        top: 800px;
+        top: 400px;
         left: 30px;
         scale: 150%;      
         }
@@ -89,8 +105,31 @@
         text-shadow: 1px 1px #000000;
         background-color: #9300a7;
         position: fixed;
-        top: 900px;
+        top: 780px;
         left: 60px;
+        scale: 150%;      
+        }
+
+
+
+        .button4 {
+        border:#000000;
+        border-width: 8px;
+        border-radius: 8px;
+        border-style:outset;color: #000000;
+        color: rgb(255, 255, 255);
+        padding: 13px 63px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        text-shadow: 1px 1px #000000;
+        background-color: #9300a7;
+        position: fixed;
+        top: 780px;
+        left: 400px;
         scale: 150%;      
         }
 
@@ -130,11 +169,12 @@
 
 .section {
   position: fixed;
-  top: -130px;
-  left: 1545px;
-  scale: 55%;
-  border-color: #000000;
-  border-style:none;
+  top: 400px;
+  left: -85px;
+  scale: 60%;
+  
+  
+  
     
 }
 
@@ -203,7 +243,8 @@
                   
     <button class="button2" onclick="goBack()">Back</button>
     <button class="button1" onclick="goToNext()">Next</button>   
-    <button class="button3" onclick="notes()">Notes</button>
+    <button class="button3" onclick="closeclock()">close clock</button>
+    <button class="button4" onclick="openclock()">open clock</button>
 <script>
 
 var OriginalContent = {
@@ -255,20 +296,22 @@ var OriginalContent = {
       </script>
 
 
+<script>
+  function closeclock() {
+  document.getElementById('analogClock')
+  .style.display = 'none'; }
+</script>
 
 
 <script>
-  function notes(){
-    document.getElementById("section").innerHTML = "analogClock";
+  function openclock() {
+  document.getElementById('analogClock').style.display = "initial";
   }
 </script>
+
 </div>
 
-
-
-
-
-<div class="section">
+<div id="analogClock" class="section">
 
   <div id="analogClock">
     <svg width="448" height="448" xmlns="http://www.w3.org/2000/svg">
@@ -310,7 +353,7 @@ var OriginalContent = {
         . 
         . 
         .
-      </svg>>
+      </svg>
       <div class="second"></div>
       <div class="hour"></div>
       <div class="minute"></div>
