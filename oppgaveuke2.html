@@ -4,56 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
+    <style>
 
-.clasdesign {
-            
-    
-     
+.h1{  
+    background-color: blue;
+            height: 200px;
+            width: 200px;           
+}
+.clasdesign {   
             background-color:red;
             height: 200px;
             width: 200px;
             align-items: center;
+            color:rgb(240, 255, 31);
             
-        }
-
-        
-.h1{  
-    background-color: blue;
+        }       
+.clasdesign2 {   
+            background-color:rgb(0, 255, 55);
             height: 200px;
             width: 200px;
-         
+            align-items: center;
+            color:rgb(0, 0, 0);
             
-}
+        }       
 .picture{
     position:  fixed;
     top: 100px;
-    left :250px;
-    
+    left :250px;   
 }
-
-
-
-
-
-</style>
-
-
-
-
-
-
-</head>
+ </style>
+ </head>
 <body>
-
-
-    <div class="h1" id="clasg">
-    <h1>Clas G</h1>
-    <h1>Jeg bor i Horten,34år</h1>
-    </div>
-    
-    
-    
+    <div class="h1" id="clasg"> <h1>Clas Gram 34år</h1><h1>Vestfold</h1></div>      
     <div class="clasdesign">
         <div>Video Redigering</div>
         <div>Sette sammen en pc</div>
@@ -64,42 +46,25 @@
         <div>Fotball</div>
         <div></div>
         </div>
-<div class="picture">
-     <div><img src="clas.jpg" alt="Flowers in Chania"></div>
-
-</div>
-        <button class="button1" onclick="changecolor()">changecolor</button>
-
-       
-        
-        
-        
-     <script>
-            
-
-
-
-</script>
-
-<div id="clastest" class="clasdesign2" class="picture">
-    <h1></h1>
+    <div class="picture"><div><img src="clas.jpg"></div></div>
     
-</div>
-<label for="selectColor">
-    Select a color:
-</label>
-<select id="selectColor" onchange="changeColor()">
-    <option value="black">Black</option>
-    <option value="crimson">Red</option>
-    <option value="green">Green</option>
-    <option value="#0984e3">Blue</option>
-    <option value="cyan">Cyan</option>
-    <option value="#00b894">Mint Leaf</option>
-    <option value="#e84393">Pink</option>
+    <button class="button1" onclick="changerandomcolor()">change random colors</button>
+    
+    
+    
+    <label for="selectColor">Select a Border color: </label>
+    <select id="selectColor" onchange="changecolor()">
+       <option value="black">Black</option>
+       <option value="crimson">Red</option>
+       <option value="green">Green</option>
+       <option value="#0984e3">Blue</option>
+       <option value="cyan">Cyan</option>
+       <option value="#00b894">Mint Leaf</option>
+       <option value="#e84393">Pink</option>
 </select>
 
-<label for="selecttext">
-    Select a color:
+<label for="selectext">
+    Select a Text color:
 </label>
 <select id="selectext" onchange="changetext()">
     <option value="black">Black</option>
@@ -113,7 +78,7 @@
 
 <script>
    
-    function changeColor() {
+    function changecolor() {
         let div1 = document.getElementById("clasg");
         let selectColor = document.getElementById("selectColor");
         
@@ -130,7 +95,7 @@
         div2.style.color= selectedColor;
     }
 
-    function changecolor(){
+    function changerandomcolor(){
              if (document.getElementById("clasg").style.backgroundColor == "black")
                 {document.getElementById("clasg").style.backgroundColor = "blue";}
                
