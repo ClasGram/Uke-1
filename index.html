@@ -15,36 +15,17 @@
 <body>  
   <link rel="stylesheet" href="style.css">
    <header>
-    <nav>  
-      <img src="getacademy.png" class="Logo">
-      <ul>
-         
-         <li>
-            <a href="#"><p>sign up</p></a>
-         </li>
-         <li>
-            <a href="#"><p>login</p></a>
-           <input><a href="#"></a></input>
-      </li>
-         <li class="search">
-             <a href="#">
-             <i class="fa-solid fa-magnifying-glass"></i>
-             </a>
-          </li>
-          <li class="hamburger">
-              <a href="#">
-                  <div class="bar"></div>
-              </a>
-          </li>
-         <li>
-          <a href="#"></a>
-         </li>
-      </ul>
-     
-      </nav>
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <div class="search-container">
+        <form action="get.jpg">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
 </header>
-
-
 
 
     <h2> <p id="P0" >Huske liste over sider til coding</p></h2>
@@ -62,7 +43,10 @@
     <button class="button1" onclick="goToNext()">Next</button>   
     <button class="button3" onclick="closeclock()">close clock</button>
     <button class="button4" onclick="openclock()">open clock</button>
+    <button class="søk" id="søk"></button>
+
 <script>
+
 
 var OriginalContent = {
         "P0": "Huske liste over sider til coding",
@@ -96,30 +80,18 @@ var OriginalContent = {
           document.getElementById("P6").innerHTML =OriginalContent["P6"]; 
           document.getElementById("P7").innerHTML =OriginalContent["P7"];
       }     
-    
 
-     
-     
-      
         function ToggleText(){
         document.getElementById("ParaGraph").innerHTML = "NewText!";
         }
-     
-      
-     
+
        function ToggleText2(){
         document.getElementbyId("ParaGraph2").innerHTML = "newnewnewenwe!";
       }
       
-
-
-
   function closeclock() {
   document.getElementById('analogClock')
   .style.display = 'none'; }
-
-
-
 
   function openclock() {
   document.getElementById('analogClock').style.display = "initial";
